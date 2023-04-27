@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${titulo}">Spring index</title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<br>
+<p th:text="${user.name}"></p>
+<p th:if="${user.lastname}" th:text="${user.lastname}"></p>
+<p th:if="${user.lastname == null}">No hay apellido</p>
+</body>
+</html>
